@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar CEP</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(/undraw_location_tracking_re_n3ok.svg);
+            background-repeat: no-repeat;
+            background-size: 500px;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background-color: rgb(211, 211, 211);
+
+
+        }
+        .container {
+            width: 350px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 4px;
+           
+        }
+
+        .container p {
+            font-size: 18px;
+            margin: 0;
+            margin-bottom: 20px;
+            border-bottom: 1px solid rgb(194, 194, 194);
+            padding-bottom: 20px;
+            font-weight: 200;
+        }
+
+        .content .box {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+
+        .box label {
+            font-size: 14px;
+            color: rgb(83, 83, 83);
+        }
+
+        .box input {
+            padding: 5px;
+            border: 1px solid rgb(194, 194, 194);
+            border-radius: 2px;
+            outline: none;
+        }
+
+        .box .erro {
+            border: 1px solid rgba(255, 0, 0, 0.552)
+        }
+
+        .box span {
+            margin-top: 5px;
+            color: rgba(255, 0, 0, 0.805);
+            font-size: 12px;
+        }
+
+        .content button {
+            width: 100%;
+            padding: 6px;
+            background-color: rgb(0, 136, 255);
+            color: white;
+            border: none;
+            border-radius: 2px;
+            outline: none;
+            cursor: pointer;
+
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+
+       <p>Preencha seu endereço</p>
+
+        <div class="content">
+
+            <div class="box">
+                <label>Cep</label>
+                <input type="text" id="inputCep" placeholder="Insira o CEP desejado.">
+                <span class="spanErro"></span>
+            </div>
+
+            <div class="box">
+                <label>Rua</label>
+                <input type="text" id="rua" placeholder="Ex: Rua Santa Maria ">
+            </div>
+
+            <div class="box">
+                <label>Bairro</label>
+                <input type="text" id="bairro" placeholder="Ex: Vila São Mateus">
+            </div>
+
+            <div class="box">
+                <label>Cidade</label>
+                <input type="text" id="cidade" placeholder=" Ex: São Paulo">
+            </div>
+
+            <div class="box">
+                <label>UF</label>
+                <input type="text" id="uf" placeholder="Ex: SP">
+            </div>
+
+            <div class="box">
+                <label>IBGE</label>
+                <input type="text" id="ibge" placeholder="Ex: 3511102">
+            </div>
+
+            <button>Pronto!</button>
+        
+        </div>
+
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
